@@ -1,4 +1,5 @@
 import com.rosario.animales.oviparos.Oviparos;
+import com.rosario.animales.viviparos.Viviparos;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,6 +7,7 @@ public class Main {
         aves();
         anfibios();
         reptiles();
+        mamiferos();
     }
 
     public static void peces() {
@@ -30,7 +32,7 @@ public class Main {
                 "\n Tipo de Habitad: " + oviparo.getHabitad() +
                 "\n Numero de Ojos: " + oviparo.getNumeroOjos() +
                 "\n Cuanto Pesa: " + oviparo.getPeso() +
-                "\n Cuanto Mide: " + oviparo.getTamanio() + "centimetros" );
+                "\n Cuanto Mide: " + oviparo.getTamanio() + "centimetros");
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("");
 
@@ -118,10 +120,38 @@ public class Main {
                 "\n Tipo de Habitad: " + oviparo.getHabitad() +
                 "\n Numero de Ojos: " + oviparo.getNumeroOjos() +
                 "\n Cuanto Pesa: " + oviparo.getPeso() +
-                "\n Cuanto Mide: " + oviparo.getTamanio() + "Metros"+
+                "\n Cuanto Mide: " + oviparo.getTamanio() + "Metros" +
                 "\n Numero de Patas: " + oviparo.getNumeroPatas());
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
 
+    }
+
+    public static void mamiferos() {
+        Viviparos viviparo = new Viviparos();
+        viviparo.setNombre("Vaca");
+        viviparo.setColor("Blanco con negro");
+        viviparo.setPeso("600 Kg");
+        viviparo.setTamanio(1.40f);
+        viviparo.setMetodoReproduccion("Fecundación interna");
+        viviparo.setNumeroHijos(1);
+        viviparo.setAlimentacion("Normalmente de pasto y hierbas");
+        viviparo.setDesplazamiento("Terrestre");
+        viviparo.setNumeroOjos(2);
+        viviparo.setNumeroPatas(4);
+        viviparo.setHabitad("Todo el mundo, normalmente domésticas");
+
+        System.out.println("El nombre del mamifero es; " + viviparo.getNombre() +
+                "\n El color de la vaca normalmente es: " + viviparo.getColor() +
+                "\n El peso de la vaca normalmente es de: " + viviparo.getPeso() +
+                "\n El tamaño de una vaca promedio es de: " + viviparo.getTamanio() + " " + "mts" +
+                "\n El método de reproducción de una vaca es: " + viviparo.getMetodoReproduccion() +
+                "\n El número de hijos habitual de una vaca es de: " + viviparo.getNumeroHijos() +
+                "\n Las vacas se alimentan de:" + viviparo.getAlimentacion() +
+                "\n Las vacas se desplazan de forma: " + viviparo.getDesplazamiento() +
+                "\n A menos que tengan problemas genéticos, las vacas suelen tener: " + viviparo.getNumeroOjos()
+                + " " + "ojos" + " " + "y" + " " + viviparo.getNumeroPatas() + " " + "patas" +
+                "\n Usualmente las vacas habitan en: " + viviparo.getHabitad()+
+                "");
     }
 }
 //

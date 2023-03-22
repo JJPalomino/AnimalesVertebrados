@@ -19,4 +19,5 @@ public class Viviparos extends Animal {
     public void setNumeroHijos(int numeroHijos) {
         this.numeroHijos = numeroHijos;
     }
+
 }
